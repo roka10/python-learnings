@@ -69,3 +69,17 @@ empty_set=set()
 my_dict={"name":"Raju","age":23,"cast":"hindu"}
 print(my_dict)
 print(my_dict["name"])
+#it give the value of the key if it is found, otherwise it returns the default value
+print(my_dict.get("age","not found"))
+#it updates the dictionary with the new key-value pairs
+my_dict.update({"name":"Vijay","phone":9876543210,"address":"Mumbai"})
+print(my_dict)
+#it give the keys of the dictionary
+print(my_dict.keys())
+#it give the values of the dictionary
+print(my_dict.values())
+#it give the keys and values of the dictionary
+print(my_dict.items())
+
+for key, value in my_dict.items():
+    print(key, value)
